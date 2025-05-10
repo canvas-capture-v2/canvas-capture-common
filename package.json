@@ -1,7 +1,6 @@
 {
-  "name": "canvas-capture-common",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@canvas-capture-v2/canvas-capture-common",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -27,7 +26,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/canvas-capture-v2/canvas-capture-common"
-
+    "url": "git+https://github.com/canvas-capture-v2/canvas-capture-common.git"
   }
 }
