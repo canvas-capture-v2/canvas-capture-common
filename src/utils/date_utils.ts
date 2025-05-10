@@ -116,3 +116,28 @@ export const compare_time_strings = (a: string, b: string) => {
     }
     return 0
 }
+
+export const millis_to_time_string = (milliseconds: number): string => {
+    let millis = milliseconds
+    let seconds = 0
+    let minutes = 0
+    let hours = 0
+    let days = 0
+    if (millis >= 1000) {
+        seconds = Math.floor(millis / 1000)
+        millis = millis % 1000
+    }
+    if (seconds >= 60) {
+        minutes = Math.floor(seconds / 60)
+        seconds = seconds % 60
+    }
+    if (minutes >= 60) {
+        hours = Math.floor(minutes / 60)
+        minutes = minutes % 60
+    }
+    if (hours >= 24) {
+        days = Math.floor(hours / 24)
+        hours = hours % 24
+    }
+    return `${days} D ${hours} H ${minutes} M ${seconds} S ${millis} Ms`
+}

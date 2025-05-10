@@ -21,8 +21,8 @@ import type {
     RubricRating,
     RubricCriteria,
     Permissions
-} from "./types/front-end/assignment";
-import type {Course} from "./types/front-end/course";
+} from "./src/types/front-end/assignment";
+import type {Course} from "./src/types/front-end/course";
 import type {
     Quiz,
     QuizQuestion,
@@ -38,12 +38,12 @@ import type {
     RangeAnswer,
     MultipleBlankDropdownAnswer,
     Answer
-} from "./types/front-end/quiz";
-import type {Submission, SubmissionComment} from "./types/front-end/submission"
-import type {CanvasAssignment, CanvasAssignmentGroup} from "./types/back-end/assignment"
-import type {CanvasCourse} from "./types/back-end/course"
-import type {CanvasSubmission} from "./types/back-end/submission";
-import {divide_time_strings, add_time_strings, compare_time_strings} from "./utils/date_utils"
+} from "./src/types/front-end/quiz";
+import type {Submission, SubmissionComment} from "./src/types/front-end/submission"
+import type {CanvasAssignment, CanvasAssignmentGroup} from "./src/types/back-end/assignment"
+import type {CanvasCourse} from "./src/types/back-end/course"
+import type {CanvasSubmission} from "./src/types/back-end/submission";
+import {divide_time_strings, add_time_strings, compare_time_strings, millis_to_time_string} from "./src/utils/date_utils"
 
 export type {
     Answer,
@@ -94,5 +94,6 @@ export type {
 export {
     divide_time_strings,
     add_time_strings,
-    compare_time_strings
+    compare_time_strings,
+    millis_to_time_string
 }

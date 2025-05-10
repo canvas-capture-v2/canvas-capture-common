@@ -16,7 +16,7 @@
 
     "declaration": true,
     "outDir": "lib",
-    "rootDir": "src"
+    "rootDir": "."
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "index.ts"]
 }
