@@ -6,13 +6,28 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "package": "tsc"
   },
   "devDependencies": {
     "typescript": "^5.8.3",
     "vite": "^6.3.5"
   },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": "./lib/index.js",
+    "./lib": "./lib/index.js",
+    "./lib/index": "./lib/index.js",
+    "./lib/index.js": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/canvas-capture-v2/canvas-capture-common"
+
   }
 }
